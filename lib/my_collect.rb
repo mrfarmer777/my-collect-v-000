@@ -4,7 +4,7 @@ def my_collect(collection)
     res=Array.new
     i=0
     while i<collection.size
-      res<<yield(item)
+      res<<yield(collection[i])
       i+=1
     end
     res
